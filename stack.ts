@@ -2,8 +2,7 @@ interface StackConfig<T> {
     [index: string]: T;
 }
 
-
-class Stack<T> {
+export class Stack<T> {
     private length: number;
     private stack: StackConfig<T>;
     constructor() {
