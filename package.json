@@ -1,0 +1,38 @@
+{
+  "name": "stack-and-list-typing",
+  "version": "1.0.0",
+  "description": "Stack and LinkedList with using Typescript and Mocha tests.",
+  "main": "linkedlist.js",
+  "scripts": {
+    "test": "nyc mocha -r ts-node/register *.test.ts",
+    "tsc": "tsc"
+  },
+  "nyc": {
+    "include": [
+      "*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "all": true
+  },
+  "author": "Alexei-Lashakov",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "source-map-support": "^0.5.10",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
+  }
+}

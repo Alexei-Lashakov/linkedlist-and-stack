@@ -7,7 +7,7 @@ class LinkedNode<T> {
     }
 }
 
-class LinkedList<T> {
+export class LinkedList<T> {
     private head: LinkedNode<T> | null;
     private length: number;
     constructor(headElement?: LinkedNode<T>) {
